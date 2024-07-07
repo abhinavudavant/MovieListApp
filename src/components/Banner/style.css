@@ -1,0 +1,27 @@
+
+.banner {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
+  background-color: #242424; 
+  color: #ffffff; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  
+}
+
+.banner h1 {
+  font-size: 2rem; 
+  color: inherit; 
+  
+}
+
+
+body {
+  padding-top: 100px; 
+}
