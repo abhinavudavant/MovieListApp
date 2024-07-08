@@ -1,4 +1,3 @@
-// GenreFilter.js
 import React, { useState } from 'react';
 
 const GenreFilter = ({ genres, onFilter }) => {
@@ -12,7 +11,7 @@ const GenreFilter = ({ genres, onFilter }) => {
 
   const handleAllGenres = () => {
     setSelectedGenre(null);
-    onFilter([]); // Pass an empty array to show all genres
+    onFilter([]); 
   };
 
   return (
