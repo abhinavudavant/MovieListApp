@@ -1,9 +1,10 @@
-import './style.css'
 function Banner(){
     return(
-        <div className="banner">
-      <h2>Movie List App</h2>
-    </div>
+    <header className="fixed top-0 left-0 z-50 w-full bg-black p-4 shadow-md">
+      <p className="text-center font-sans text-lg font-bold text-white">
+        Movie List App
+      </p>
+    </header>
     )
     
 }

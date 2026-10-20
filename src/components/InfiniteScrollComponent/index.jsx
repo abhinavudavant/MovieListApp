@@ -15,7 +15,7 @@ const InfiniteScrollComponent = () => {
   const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
-  const [currentYear, setCurrentYear] = useState(2012);
+  const [currentYear, setCurrentYear] = useState(2025);
   const [selectedGenres, setSelectedGenres] = useState([]);
   const fetchingRef = useRef(false);
 
