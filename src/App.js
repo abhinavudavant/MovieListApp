@@ -1,6 +1,4 @@
-import React from 'react';
 import Banner from './components/Banner';
-import InfiniteScrollComponent from './components/InfiniteScrollComponent';
 import { MovieList  } from './features/movies';
 
 const App = () => {
