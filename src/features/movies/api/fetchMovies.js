@@ -1,7 +1,7 @@
 import {tmdbClient} from '../../../lib/tmdbClient';
 
 export const fetchMovies = async ({ pageParam = 1, queryKey }) => {
-  const [_key, { year, genreString }] = queryKey;
+  const [, { year }] = queryKey;
   const response = await tmdbClient.get('/discover/movie', {
     params: {
       include_adult: true,
