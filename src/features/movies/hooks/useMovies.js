@@ -1,9 +1,25 @@
+
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { fetchMovies } from '../api/fetchMovies';
 
-export const useMovies = ({ year, genreString }) => {
+export const useMovies = ({
+  search = '',
+  year = '',
+  genreString = '',
+  minRating = '',
+  sortBy = 'popularity.desc',
+}) => {
   return useInfiniteQuery({
-    queryKey: ['movies', { year, genreString }],
+    queryKey: [
+      'movies',
+      {
+        search,
+        year,
+        genreString,
+        minRating,
+        sortBy,
+      },
+    ],
     queryFn: fetchMovies,
     initialPageParam: 1,
     getNextPageParam: (lastPage) =>
